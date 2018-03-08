@@ -47,8 +47,8 @@ rm(all.data)
 avg.data <- tidy.data %>% group_by(subject, activity) %>% summarize_all(funs(mean))
 
 #writes out txt files for the full and summarized datasets
-write.table(tidy.data, "tidy-extracted-data-all-observations.txt", col.names = TRUE)
-write.table(avg.data, "tidy-summary-by-grp-activity.txt", col.names = TRUE)
+write.table(tidy.data, "tidy-extracted-data-all-observations.txt", col.names = TRUE, row.names = FALSE)
+write.table(avg.data, "tidy-summary-by-grp-activity.txt", col.names = TRUE, row.names = FALSE)
 
 # reads the summarized text file back in to memory if required
 avg.data <- read.table("tidy-summary-by-grp-activity.txt", header = TRUE, check.names = FALSE)
