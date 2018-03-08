@@ -67,8 +67,9 @@ DATA DESCRIPTORS:
 
 -   Unique integer 1-30
 
-Processed data features - Mean() and std() values described below all
-represent normalized values bounded within \[-1,1\]
+Processed data features - Features described below all represent
+normalized values bounded within \[-1,1\] and have been averaged to
+provide a single value for each activity performed by each subject.
 
 1.  tBodyAcc-mean()-X
 2.  tBodyAcc-mean()-Y
